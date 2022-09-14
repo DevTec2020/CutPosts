@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F0FFFF;
+  padding: 7px;
+}
+
+.conteiner {
+  display: grid;
+  margin: 0;
+  gap: 10px 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "Item1 Item1 Item2 Item5" "Item3 Item4 Item4 Item5";
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 27px;
+}
+.card .cardTitle {
+  display: flex;
+  gap: 10px;
+  font-family: "roboto";
+}
+
+.cardItem1 {
+  background-color: rgb(124, 63, 182);
+  grid-area: Item1;
+}
+.cardItem1 .face1 {
+  border-radius: 100px;
+  border: 2px solid rgb(213, 149, 250);
+  width: 38px;
+}
+.cardItem1 .nameTitle1 {
+  color: rgb(239, 215, 253);
+}
+.cardItem1 .descTitle1 {
+  color: rgb(213, 149, 250);
+}
+.cardItem1 h1 {
+  color: white;
+  font-family: "roboto";
+  font-size: 21px;
+}
+.cardItem1 p {
+  color: rgb(213, 149, 250);
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.cardItem2 {
+  background-color: #606060;
+  grid-area: Item2;
+}
+.cardItem2 .face2 {
+  border-radius: 100px;
+  border: 2px solid white;
+  width: 38px;
+}
+.cardItem2 .nameTitle2 {
+  color: whitesmoke;
+}
+.cardItem2 .descTitle2 {
+  color: #A0A0A0;
+}
+.cardItem2 h1 {
+  color: white;
+  font-family: "roboto";
+  font-size: 21px;
+}
+.cardItem2 p {
+  color: #A0A0A0;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.cardItem3 {
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  grid-area: Item3;
+}
+.cardItem3 .face3 {
+  border-radius: 100px;
+  border: 2px solid #606060;
+  width: 38px;
+}
+.cardItem3 .nameTitle3 {
+  color: #606060;
+}
+.cardItem3 .descTitle3 {
+  color: #A0A0A0;
+}
+.cardItem3 h1 {
+  color: #808080;
+  font-family: "roboto";
+  font-size: 24px;
+}
+.cardItem3 p {
+  color: #A0A0A0;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.cardItem4 {
+  background-color: #DAA520;
+  grid-area: Item4;
+  border: 1px solid #A0A0A0;
+}
+.cardItem4 .face4 {
+  border-radius: 100px;
+  border: 2px solid whitesmoke;
+  width: 38px;
+}
+.cardItem4 .nameTitle4 {
+  color: whitesmoke;
+}
+.cardItem4 .descTitle4 {
+  color: whitesmoke;
+}
+.cardItem4 h1 {
+  color: white;
+  font-family: "roboto";
+  font-size: 21px;
+}
+.cardItem4 p {
+  color: whitesmoke;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.cardItem5 {
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  grid-area: Item5;
+}
+.cardItem5 .face5 {
+  border-radius: 100px;
+  border: 2px solid #606060;
+  width: 38px;
+}
+.cardItem5 .nameTitle5 {
+  color: #606060;
+}
+.cardItem5 .descTitle5 {
+  color: #A0A0A0;
+}
+.cardItem5 h1 {
+  color: #808080;
+  font-family: "roboto";
+  font-size: 21px;
+}
+.cardItem5 p {
+  color: #A0A0A0;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+@media (max-width: 920px) {
+  .conteiner {
+    grid-template-areas: "Item1 Item2" "Item3 Item4" "Item5 Item5";
+  }
+  .cardItem1 {
+    width: 390px;
+    height: 300px;
+  }
+  .cardItem2 {
+    width: 390px;
+    height: 300px;
+  }
+}
+@media (max-width: 430px) {
+  .conteiner {
+    grid-template-areas: "Item1 Item1" "Item2 Item2" "Item3 Item3" "Item4 Item4" "Item5 Item5";
+  }
+  .cardItem1 {
+    width: 350px;
+    height: auto;
+  }
+  .cardItem2 {
+    width: 350px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

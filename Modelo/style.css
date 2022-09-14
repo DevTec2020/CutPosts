@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.conteiner {
+  display: grid;
+  margin: 0;
+  gap: 15px 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "Item1 Item1 Item2 Item5"
+    "Item3 Item4 Item4 Item5";
+}
+.card {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 40px;
+}
+.cardTitle{
+  display: flex;
+  gap: 10px;
+  font-family:'roboto';
+}
+.face{
+  border-radius: 100px;
+  border: 2px solid rgb(213, 149, 250);
+  width: 35px;
+}
+.nameTitle{
+  color: rgb(239, 215, 253);
+}
+.descTitle{
+  color: rgb(213, 149, 250);
+}
+.cardItem1 {
+  background-color: rgb(124, 63, 182);
+  grid-area: Item1;
+}
+.cardItem1Corpo h1{
+  color: white;
+  font-family:'roboto';
+  font-size: 21px;
+}
+.cardItem1Corpo p{
+  color: rgb(213, 149, 250);
+  font-family:'roboto';
+  font-size: 14px;
+  
+}
+.cardItem2 {
+  grid-area: Item2;
+
+}
+.cardItem3 {
+  grid-area: Item3;
+
+}
+.cardItem4 {
+  grid-area: Item4;
+
+}
+.cardItem5 {
+  grid-area: Item5;
+}

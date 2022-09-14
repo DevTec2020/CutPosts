@@ -1,0 +1,6 @@
+@mixin FontCards ($Cor, $Font, $Size){
+  color: $Cor;
+  font-family:$Font;
+  font-size: $Size;
+  
+}

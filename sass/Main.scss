@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #F0FFFF;
+  padding: 7px;
+}
+.conteiner {
+  display: grid;
+  margin: 0;
+  gap: 10px 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "Item1 Item1 Item2 Item5"
+    "Item3 Item4 Item4 Item5"
+    ;
+}
+.card {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 27px;
+
+  .cardTitle{
+    display: flex;
+    gap: 10px;
+    font-family:'roboto';
+  }
+}
+
+.cardItem1 {
+  background-color: rgb(124, 63, 182);
+  grid-area: Item1;
+  .face1{
+    border-radius: 100px;
+    border: 2px solid rgb(213, 149, 250);
+    width: 38px;
+  }
+  .nameTitle1{
+    color: rgb(239, 215, 253);
+  }
+  .descTitle1{
+    color: rgb(213, 149, 250);
+  }
+  h1{
+    @include FontCards(white,'roboto',21px)
+  }
+  p{
+    @include FontCards(rgb(213, 149, 250), 'roboto',14px)
+  }
+}
+
+.cardItem2 {
+  background-color: #606060;
+  grid-area: Item2;
+  .face2{
+    border-radius: 100px;
+    border: 2px solid white;
+    width: 38px;
+  }
+  .nameTitle2{
+    color: whitesmoke;
+  }
+  .descTitle2{
+    color: #A0A0A0;
+  }
+  h1{
+    @include FontCards(white,'roboto',21px)
+  }
+  p{
+    @include FontCards(#A0A0A0, 'roboto',14px)
+  }
+}
+.cardItem3 {
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  grid-area: Item3;
+  .face3{
+    border-radius: 100px;
+    border: 2px solid #606060;
+    width: 38px;
+  }
+  .nameTitle3{
+    color: #606060;
+  }
+  .descTitle3{
+    color: #A0A0A0;
+  }
+  h1{
+    @include FontCards(#808080,'roboto',24px)
+  }
+  p{
+    @include FontCards(#A0A0A0, 'roboto',14px)
+  }
+
+}
+.cardItem4 {
+  background-color: #DAA520;
+  grid-area: Item4;
+  border: 1px solid #A0A0A0;
+  .face4{
+    border-radius: 100px;
+    border: 2px solid whitesmoke;
+    width: 38px;
+  }
+  .nameTitle4{
+    color: whitesmoke;
+  }
+  .descTitle4{
+    color: whitesmoke;
+  }
+  h1{
+    @include FontCards(white,'roboto',21px)
+  }
+  p{
+    @include FontCards(whitesmoke, 'roboto',14px)
+  }
+}
+.cardItem5 {
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  grid-area: Item5;
+  .face5{
+    border-radius: 100px;
+    border: 2px solid #606060;
+    width: 38px;
+  }
+  .nameTitle5{
+    color: #606060;
+  }
+  .descTitle5{
+    color: #A0A0A0;
+  }
+  h1{
+    @include FontCards(#808080,'roboto',21px)
+  }
+  p{
+    @include FontCards(#A0A0A0, 'roboto',14px)
+  }
+}
+@media (max-width:920px){
+  .conteiner{
+    grid-template-areas:
+      "Item1 Item2" 
+      "Item3 Item4"
+      "Item5 Item5" 
+    ;
+  }
+  .cardItem1{
+    width: 390px;
+    height: 300px;
+  }
+  .cardItem2{
+    width: 390px;
+    height: 300px;
+  }
+}
+@media (max-width:430px){
+  .conteiner{
+    
+    grid-template-areas:
+      "Item1 Item1" 
+      "Item2 Item2"
+      "Item3 Item3"
+      "Item4 Item4"
+      "Item5 Item5" 
+    ;
+  }
+  .cardItem1{
+    width: 350px;
+    height: auto;
+  }
+  .cardItem2{
+    width: 350px;
+    height: auto;
+  }
+}
